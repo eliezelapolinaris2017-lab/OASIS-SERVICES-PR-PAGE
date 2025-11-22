@@ -1,128 +1,317 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oasis Air Cleaner Services LLC</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-body {
-  margin: 0;
-  font-family: Poppins, sans-serif;
-  background: #ffffff;
-  color: #111;
-}
-
-.hero {
-  background: url('https://i.imgur.com/kJX3DkZ.jpeg') center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  position: relative;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  top:0; left:0;
-  width:100%; height:100%;
-  background: rgba(0,0,0,0.45);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
-.hero img {
-  width:130px;
-  margin-bottom:10px;
-}
-
-.btn {
-  display:inline-block;
-  background:#0ab3ff;
-  padding:15px 30px;
-  border-radius:30px;
-  color:white;
-  text-decoration:none;
-  font-weight:600;
-  margin-top:10px;
-}
-
-.section {
-  padding:50px 20px;
-  text-align:center;
-}
-
-.services {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-  padding:20px;
-}
-
-.card {
-  background:white;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-
-.mockup {
-  width:100%;
-  max-width:500px;
-  margin:auto;
-  display:block;
-  border-radius:20px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.25);
-}
-
-.footer {
-  background:#0ab3ff;
-  color:white;
-  padding:20px;
-  text-align:center;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oasis Air Cleaner Services LLC</title>
+  <meta name="description" content="Instalaciones, mantenimientos y reparaciones de aires acondicionados en Puerto Rico. Citas por confirmafy.com/oasis-services-pr" />
+  <link rel="stylesheet" href="styles.css?v=1" />
+  <link rel="icon" type="image/png" href="assets/logo-oasis.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- NAVBAR -->
+  <header class="topbar">
+    <div class="container row between center-v">
+      <div class="brand">
+        <img src="assets/logo-oasis.png" alt="Oasis Air Cleaner Services LLC" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name">Oasis Air Cleaner</span>
+          <span class="brand-sub">Services LLC</span>
+        </div>
+      </div>
 
-<section class="hero">
-  <div class="hero-content">
-    <img src="/mnt/data/C66DBA0E-A422-46D8-A982-7AB63CD732FD.PNG">
-    <h1>Oasis Air Cleaner Services LLC</h1>
-    <p>Instalación • Mantenimiento • Reparación • Mini Split Inverter</p>
-    <a class="btn" href="https://confirmafy.com/oasis-services-pr" target="_blank">Agendar Cita</a>
-  </div>
-</section>
+      <nav class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#contratos">Contratos</a>
+        <a href="#zona">Zona de servicio</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://confirmafy.com/oasis-services-pr" target="_blank" class="btn-nav">Agendar cita</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="section">
-  <h2>Servicios Profesionales</h2>
-  <div class="services">
-    <div class="card">✅ Instalación Mini Split Inverter</div>
-    <div class="card">✅ Mantenimiento profundo</div>
-    <div class="card">✅ Reparaciones Inverter</div>
-    <div class="card">✅ Contratos de mantenimiento</div>
-    <div class="card">✅ Diagnóstico técnico</div>
-    <div class="card">✅ Presurización y detección de fugas</div>
-  </div>
-</section>
+  <!-- HERO PREMIUM con MOCKUP -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <!-- Texto -->
+      <div class="hero-text">
+        <h1>Clima perfecto, <span>servicio profesional</span> en todo Puerto Rico.</h1>
+        <p class="hero-sub">
+          Instalación, mantenimiento profundo, reparación Inverter y contratos de servicio 
+          para mantener tus aires acondicionados trabajando al máximo rendimiento.
+        </p>
 
-<section class="section">
-  <h2>Vista del Servicio</h2>
-  <img class="mockup" src="https://i.imgur.com/rBmujbX.jpeg">
-</section>
+        <div class="hero-cta">
+          <a href="https://confirmafy.com/oasis-services-pr" target="_blank" class="btn-primary">
+            Agendar cita por Confirmafy
+          </a>
+          <a href="https://wa.me/17876643079" target="_blank" class="btn-outline">
+            WhatsApp: 787-664-3079
+          </a>
+        </div>
 
-<div class="footer">
-  📞 787-664-3079 | Citas: confirmafy.com/oasis-services-pr
-  <br>
-  <a href="https://wa.me/17876643079" style="color:white;">WhatsApp</a>
-</div>
+        <div class="hero-meta">
+          <span>📞 Teléfono directo: <a href="tel:17876643079">787-664-3079</a></span>
+          <span>🕒 Lunes a sábado · Citas por agenda</span>
+        </div>
 
+        <div class="hero-badges">
+          <span class="badge">Mini Split Inverter</span>
+          <span class="badge">Residencial & Comercial</span>
+          <span class="badge">Técnicos certificados</span>
+        </div>
+      </div>
+
+      <!-- MOCKUP -->
+      <div class="hero-mockup">
+        <!-- Tarjeta “servicio” pared -->
+        <div class="ac-card glass">
+          <div class="ac-header">
+            <span class="ac-title">Servicio programado</span>
+            <span class="ac-status">Confirmado ✔</span>
+          </div>
+          <div class="ac-body">
+            <div class="ac-unit"></div>
+            <div class="ac-info">
+              <p class="ac-client">Cliente: Hogar Martínez</p>
+              <p>Mantenimiento profundo · 2× Mini Split 12k BTU</p>
+              <p class="ac-time">Hoy · 10:00 AM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mockup de iPhone con Confirmafy -->
+        <div class="phone-frame glass">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="screen-header">
+              <span>Confirmafy · Oasis</span>
+            </div>
+            <div class="screen-body">
+              <h3>Tu cita está lista</h3>
+              <p>Selecciona fecha y horario para tu servicio de aire acondicionado.</p>
+              <div class="screen-slot">
+                <span>Jueves 3:00 PM</span>
+                <span class="slot-status">Disponible</span>
+              </div>
+              <button class="screen-btn">Confirmar cita</button>
+              <p class="screen-foot">confirmafy.com/oasis-services-pr</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glow decorativo -->
+        <div class="hero-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <h2>Servicios de aire acondicionado</h2>
+      <p class="section-sub">
+        Cubrimos todo el ciclo de vida de tus unidades: desde la instalación correcta, hasta el mantenimiento profundo,
+        diagnóstico avanzado y reparación Inverter.
+      </p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Instalación de Mini Split Inverter</h3>
+          <p>
+            Instalaciones limpias, niveladas y según las especificaciones del fabricante.
+            Tubería, vacío, presurización y pruebas de fuga realizadas a estándares profesionales.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Mantenimiento profundo</h3>
+          <p>
+            Limpieza interna y externa, bandeja, serpentines, blower, filtros y desagüe.
+            Ideal para mejorar rendimiento, eliminar malos olores y cuidar tu inversión.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Reparaciones Inverter</h3>
+          <p>
+            Diagnóstico técnico, lectura de códigos de error, verificación de sensores, 
+            placas electrónicas, compresores y componentes de sistemas Inverter.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Contratos de mantenimiento</h3>
+          <p>
+            Planes programados para residencias, oficinas y comercios.
+            Recordatorios automáticos y prioridad en agenda mediante Confirmafy.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Diagnóstico y evaluación de sistemas</h3>
+          <p>
+            Evaluación de capacidad BTU, condiciones de instalación, consumo energético 
+            y recomendaciones para mejorar el confort y reducir el gasto eléctrico.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Presurización y detección de microfugas</h3>
+          <p>
+            Pruebas de nitrógeno, verificación de presiones y revisión de uniones 
+            para detectar y corregir fugas que afectan el rendimiento del sistema.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRATOS -->
+  <section id="contratos" class="section section-alt">
+    <div class="container contratos-grid">
+      <div>
+        <h2>Contratos de mantenimiento Oasis</h2>
+        <p class="section-sub">
+          Mantén tus unidades siempre al día. Creamos un plan según la cantidad de equipos, horarios
+          y necesidades de tu hogar o negocio.
+        </p>
+
+        <ul class="check-list">
+          <li>Mantenimientos programados 1–3 veces al año.</li>
+          <li>Recordatorios por mensaje y correo.</li>
+          <li>Prioridad en emergencias y fechas pico.</li>
+          <li>Reporte técnico básico de cada visita.</li>
+        </ul>
+
+        <a href="https://confirmafy.com/oasis-services-pr" target="_blank" class="btn-primary">
+          Solicitar propuesta de contrato
+        </a>
+      </div>
+
+      <div class="contrato-card glass">
+        <h3>Ejemplo · Plan Residencial</h3>
+        <p>4 unidades Mini Split · 2 visitas al año</p>
+        <ul class="mini-list">
+          <li>Mantenimiento profundo en cada visita</li>
+          <li>Chequeo general eléctrico y de drenaje</li>
+          <li>Descuento especial en reparaciones</li>
+        </ul>
+        <span class="tag-note">Adaptamos el plan a tu realidad.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZONA DE SERVICIO -->
+  <section id="zona" class="section">
+    <div class="container zona-grid">
+      <div>
+        <h2>Zona de servicio</h2>
+        <p class="section-sub">
+          Atendemos múltiples municipios de Puerto Rico. Según la zona y el tipo de trabajo, 
+          coordinamos la mejor fecha disponible en Confirmafy.
+        </p>
+
+        <div class="chips">
+          <span class="chip">Área Metro</span>
+          <span class="chip">Trujillo Alto</span>
+          <span class="chip">Carolina</span>
+          <span class="chip">Bayamón</span>
+          <span class="chip">Gurabo</span>
+          <span class="chip">Juncos</span>
+          <span class="chip">Río Grande</span>
+          <span class="chip">Y zonas cercanas</span>
+        </div>
+      </div>
+
+      <div class="zona-card glass">
+        <h3>¿Fuera de esta lista?</h3>
+        <p>
+          Escríbenos por WhatsApp y verificamos disponibilidad para tu área y tipo de servicio.
+        </p>
+        <a href="https://wa.me/17876643079" target="_blank" class="btn-outline full">
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS / SELLITO -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2>Lo que dicen los clientes</h2>
+      <p class="section-sub">
+        Comentarios reales que recibimos constantemente luego de los servicios.
+      </p>
+
+      <div class="cards-grid testimonios-grid">
+        <article class="card">
+          <p class="quote">“Llegaron a la hora acordada, dejaron todo limpio y el aire enfría como nuevo.”</p>
+          <span class="quote-name">Cliente residencial · Área Metro</span>
+        </article>
+
+        <article class="card">
+          <p class="quote">“Explicaron todo el proceso y documentaron el problema del equipo Inverter. Muy profesionales.”</p>
+          <span class="quote-name">Comercio pequeño · Gurabo</span>
+        </article>
+
+        <article class="card">
+          <p class="quote">“Ahora tengo las visitas programadas por contrato y no se me pasa el mantenimiento.”</p>
+          <span class="quote-name">Cliente VIP · Trujillo Alto</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <div class="container contacto-grid">
+      <div>
+        <h2>Coordina tu próximo servicio</h2>
+        <p class="section-sub">
+          Usa Confirmafy para asegurar tu espacio en agenda o comunícate directo por llamada o WhatsApp.
+        </p>
+
+        <ul class="contact-list">
+          <li>📞 Teléfono: <a href="tel:17876643079">787-664-3079</a></li>
+          <li>📲 WhatsApp: <a href="https://wa.me/17876643079" target="_blank">Enviar mensaje</a></li>
+          <li>📅 Citas en línea: <a href="https://confirmafy.com/oasis-services-pr" target="_blank">confirmafy.com/oasis-services-pr</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-box glass">
+        <h3>Mensaje rápido</h3>
+        <p>Este formulario es solo maquetación. Si lo deseas, luego lo conectamos a tu correo o a Google Forms.</p>
+        <form>
+          <input type="text" placeholder="Nombre completo" required>
+          <input type="tel" placeholder="Teléfono de contacto" required>
+          <textarea rows="3" placeholder="Cuéntanos tu necesidad (ej. mantenimiento profundo 2 unidades)..."></textarea>
+          <button type="button" class="btn-primary full">Prefiero agendar por Confirmafy</button>
+          <small>Haz clic arriba y te enviamos directo a la agenda en línea.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Oasis Air Cleaner Services LLC</strong><br>
+        Tel: <a href="tel:17876643079">787-664-3079</a><br>
+        Citas por <a href="https://confirmafy.com/oasis-services-pr" target="_blank">confirmafy.com/oasis-services-pr</a>
+      </div>
+      <div class="footer-right">
+        <span>© <span id="year"></span> Oasis Services PR · Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
